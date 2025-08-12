@@ -470,7 +470,63 @@
             </li>
           </ul>
         </div>
+        <div class="footer-contakt">
+          <p class="subscribe-text">Subscribe</p>
+          <div class="form-footer">
+            <form class="form-email">
+              <input class="footer-email" type="email" placeholder="E-mail" />
+            </form>
+            <button class="transition footer-button" type="submit">
+              Subscribe
+              <svg class="networks-img" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
+
+    <!--backdrop-->
+    <div class="backdrop is-open">
+      <div class="mobal">
+        <button class="backdrop-button">
+          <svg class="backdrop-img" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="backdrop-text">
+          Leave your contacts and we will call you back
+        </p>
+        <div class="form-conteiner">
+          <form>
+            <div class="backdrop-conteiner">
+              <label class="form-label" for="/">Name</label>
+              <input type="text" />
+            </div>
+            <div class="backdrop-conteiner">
+              <label class="form-label" for="/">Phone</label>
+              <input type="tel" />
+            </div>
+            <div class="backdrop-conteiner">
+              <label class="form-label" for="/">Email</label>
+              <input type="email" />
+            </div>
+            <div class="backdrop-conteiner">
+              <label class="form-label" for="/">Comment</label>
+              <textarea name="/" id="" placeholder="Text input"></textarea>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <legend for="/">
+                I accept the terms and conditions of the
+                <a class="" href="">Privacy Policy</a>
+              </legend>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
