@@ -472,30 +472,28 @@
         </div>
         <div class="footer-contakt">
           <p class="subscribe-text">Subscribe</p>
-          <div class="form-footer">
-            <fopm class="form-email">
-              <label class="label-footer" for="">
-                <input
-                  class="footer-email"
-                  type="email"
-                  name="signature"
-                  placeholder="E-mail"
-                />
-              </label>
-              <button class="footer-button" type="submit">
-                Subscribe
-                <svg class="frame-img" width="24" height="24">
-                  <use href="./images/icons.svg#icon-Frame"></use>
-                </svg>
-              </button>
-            </fopm>
-          </div>
+          <fopm class="subscride-email">
+            <label class="label-footer">
+              <input
+                class="footer-email"
+                type="email"
+                name="signature"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer-button" type="submit">
+              Subscribe
+              <svg class="frame-img" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame"></use>
+              </svg>
+            </button>
+          </fopm>
         </div>
       </div>
     </footer>
 
     <!--backdrop-->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="mobal">
         <button class="backdrop-button" type="button">
           <svg class="backdrop-img" width="8" height="8">
@@ -549,18 +547,35 @@
                 </svg>
               </div>
             </div>
-            <div class="backdrop-conteiner">
-              <label class="form-label" for="user-name">Comment</label>
-              <textarea name="" id="" placeholder="Text input"></textarea>
+            <div class="textarea-conteiner">
+              <label class="form-label" for="user-comment">Comment</label>
+              <textarea
+                class="comment-text"
+                name="user-comment "
+                id="user-comment "
+                placeholder="Text input"
+              >
+              </textarea>
             </div>
-            <div>
-              <input type="checkbox" />
-              <legend for="">
+            <div class="checkbox-conteiner">
+              <input
+                class="visually-hidden"
+                type="checkbox"
+                name="user-privacy"
+                id="user-privacy"
+                value="true"
+              />
+              <label class="comment-label" for="user-privacy">
+                <span class="check-span">
+                  <svg class="svg-check" width="10" height="8">
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                  </svg>
+                </span>
                 I accept the terms and conditions of the
-                <a class="" href="">Privacy Policy</a>
-              </legend>
+                <a class="check-link" href="">Privacy Policy</a>
+              </label>
             </div>
-            <button type="submit">Send</button>
+            <button class="botton-check" type="submit">Send</button>
           </form>
         </div>
       </div>
