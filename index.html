@@ -472,12 +472,12 @@
         </div>
         <div class="footer-contakt">
           <p class="subscribe-text">Subscribe</p>
-          <fopm class="subscride-email">
+          <form class="subscride-email">
             <label class="label-footer">
               <input
                 class="footer-email"
                 type="email"
-                name="signature"
+                name="user-email"
                 placeholder="E-mail"
               />
             </label>
@@ -487,7 +487,7 @@
                 <use href="./images/icons.svg#icon-Frame"></use>
               </svg>
             </button>
-          </fopm>
+          </form>
         </div>
       </div>
     </footer>
@@ -503,81 +503,79 @@
         <p class="backdrop-text">
           Leave your contacts and we will call you back
         </p>
-        <div class="form-conteiner">
-          <form>
-            <div class="backdrop-conteiner">
-              <label class="form-label" for="user-name">Name</label>
-              <div class="box-input">
-                <input
-                  class="input-text"
-                  type="text"
-                  name="user-name"
-                  id="user-name"
-                />
-                <svg class="svg-box" width="18" height="24">
-                  <use href="./images/icons.svg#icon-person"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="backdrop-conteiner">
-              <label class="form-label" for="user-name">Phone</label>
-              <div class="box-input">
-                <input
-                  class="input-text"
-                  type="tel"
-                  name="user-name"
-                  id="user-name"
-                />
-                <svg class="svg-box" width="18" height="24">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="backdrop-conteiner">
-              <label class="form-label" for="user-name">Email</label>
-              <div class="box-input">
-                <input
-                  class="input-text"
-                  type="email"
-                  name="user-name"
-                  id="user-name"
-                />
-                <svg class="svg-box" width="18" height="24">
-                  <use href="./images/icons.svg#icon-email"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="textarea-conteiner">
-              <label class="form-label" for="user-comment">Comment</label>
-              <textarea
-                class="comment-text"
-                name="user-comment "
-                id="user-comment "
-                placeholder="Text input"
-              >
-              </textarea>
-            </div>
-            <div class="checkbox-conteiner">
+        <form>
+          <div class="backdrop-conteiner">
+            <label class="form-label" for="user-name">Name</label>
+            <div class="box-input">
               <input
-                class="visually-hidden"
-                type="checkbox"
-                name="user-privacy"
-                id="user-privacy"
-                value="true"
+                class="input-text"
+                type="text"
+                name="user-name"
+                id="user-name"
               />
-              <label class="comment-label" for="user-privacy">
-                <span class="check-span">
-                  <svg class="svg-check" width="10" height="8">
-                    <use href="./images/icons.svg#icon-Vector"></use>
-                  </svg>
-                </span>
-                I accept the terms and conditions of the
-                <a class="check-link" href="">Privacy Policy</a>
-              </label>
+              <svg class="svg-box" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
             </div>
-            <button class="botton-check" type="submit">Send</button>
-          </form>
-        </div>
+          </div>
+          <div class="backdrop-conteiner">
+            <label class="form-label" for="user-phone">Phone</label>
+            <div class="box-input">
+              <input
+                class="input-text"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+              />
+              <svg class="svg-box" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="backdrop-conteiner">
+            <label class="form-label" for="user-email">Email</label>
+            <div class="box-input">
+              <input
+                class="input-text"
+                type="email"
+                name="user-email"
+                id="user-email"
+              />
+              <svg class="svg-box" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="textarea-conteiner">
+            <label class="form-label" for="user-comment">Comment</label>
+            <textarea
+              class="comment-text"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            >
+            </textarea>
+          </div>
+          <div class="checkbox-conteiner">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label class="comment-label" for="user-privacy">
+              <span class="check-span">
+                <svg class="svg-check" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="check-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="botton-check" type="submit">Send</button>
+        </form>
       </div>
     </div>
   </body>
